@@ -1,0 +1,36 @@
+//PASS BY REFERENCE USING POINTER VARIABLE
+#include <iostream>
+using namespace std;
+void Inc(int *p)
+{
+    cout<<*p<<endl;
+    *p=(*p)*2;
+    cout<<*p<<endl;
+}
+int main() {
+  
+   int money=10;
+   cout<<money<<endl;
+  Inc(&money);
+   cout<<money<<endl;
+    return 0;
+}
+
+
+//PASS BY REFERENCE USING REFERENCE VARIABLE
+#include <iostream>
+using namespace std;
+void Inc(int &p)
+{
+    cout<<p<<endl;
+    p=p+10;
+    cout<<p<<endl;
+}
+int main() {
+  
+   int money=10;
+   cout<<money<<endl;
+  Inc(money);
+   cout<<money<<endl;
+    return 0;
+}
